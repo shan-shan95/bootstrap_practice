@@ -1,25 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>ホームページ</title>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>ホームページ</title>
 
-    <!-- Bootstrap -->
-    <link href="bootstrap.css" rel="stylesheet">
-    <link href="bootstrap-theme.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
+  <!-- Bootstrap -->
+  <link href="bootstrap.css" rel="stylesheet">
+  <link href="bootstrap-theme.css" rel="stylesheet">
+  <link href="index.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
 
-  <body>
-    <h1>Hello, world!</h1>
+<body>
+  <div class="container">
 
-  </body>
+    <!-- お名前のフォーム部分始まり -->
+    <div class="row">
+      <div class="col-xs-2">
+        <span>お名前</span>
+      </div>
+      <div class="col-xs-10">
+        <form>
+          <div class="form-group-sm">
+            <input type="text" class="name form-control" placeholder="お名前">
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- お名前のフォーム部分終わり -->
+
+    <!-- フリガナのフォーム部分始まり -->
+    <div class="row">
+      <div class="col-xs-2">
+        <span>フリガナ</span>
+      </div>
+      <div class="col-xs-10">
+        <form>
+          <div class="form-group-sm">
+            <input type="text" class="name form-control" placeholder="フリガナ">
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- フリガナのフォーム部分終わり -->
+
+    <!-- 都道府県のフォーム部分始まり -->
+    <div class="row">
+      <div class="col-xs-2">
+        <span>都道府県</span>
+      </div>
+      <div class="col-xs-10">
+        <select class="state form-control">
+          <option>三重県</option>
+          <option>岐阜県</option>
+          <option>愛知県</option>
+          <option>静岡県</option>
+        </select>
+      </div>
+    </div>
+    <!-- 都道府県のフォーム部分終わり -->
+
+    <!-- ご住所のフォーム部分始まり -->
+    <div class="row">
+      <div class="col-xs-2">
+        <span>ご住所</span>
+      </div>
+      <div class="col-xs-10">
+        <form>
+          <div class="form-group-sm">
+            <input type="text" class="form-control" placeholder="ご住所">
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- ご住所のフォーム部分終わり -->
+
+    <!-- Emailのフォーム部分始まり -->
+    <div class="row">
+      <div class="col-xs-2">
+        <span>Email</span>
+      </div>
+      <div class="col-xs-10">
+        <form>
+          <div class="form-group-sm">
+            <input type="text" class="email form-control" placeholder="Email">
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- Emailのフォーム部分終わり -->
+
+    <!-- 内容のフォーム部分始まり -->
+    <div class="row">
+      <div class="col-xs-2">
+        <span>内容</span>
+      </div>
+      <div class="col-xs-10">
+        <form>
+          <div class="form-group-sm">
+            <textarea cols="132" rows="3" placeholder="お問い合わせ内容をお書きください。"></textarea>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- 内容のフォーム部分終わり -->
+
+    <!-- ボタン -->
+    <div class="row">
+      <div class="col-xs-4"></div>
+      <div class="col-xs-2">
+        <button type="button" class="btn btn-success">送信内容の確認</button>
+      </div>
+      <div class="col-xs-2">
+        <button type="button" class="btn btn-danger">キャンセル</button>
+      </div>
+    </div>
+  </div>
+</body>
 </html>

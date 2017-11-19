@@ -1,0 +1,19 @@
+body {
+  margin-top: 100px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.name.form-control {
+  width: 200px;
+}
+
+.state.form-control {
+  width: 70px;
+}
+
+.email.form-control {
+  width: 300px;
+}
